@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WizardPageContainer">
+
+    <TextView style="@style/WizardPageTitle" />
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView style="@style/WizardFormLabel"
+                android:text="@string/chip" />
+
+            <EditText android:id="@+id/chip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:hint="@string/chip"
+                android:layout_marginBottom="16dp" />
+
+            <TextView style="@style/WizardFormLabel"
+                android:text="@string/fecha_nacimiento" />
+
+            <EditText android:id="@+id/fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:hint="@string/formato_fecha"
+                android:layout_marginBottom="16dp"
+                android:inputType="date"/>
+
+            <TextView style="@style/WizardFormLabel"
+                android:text="@string/raza" />
+
+            <EditText android:id="@+id/raza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:hint="@string/raza"
+                android:layout_marginBottom="16dp" />
+
+            <TextView style="@style/WizardFormLabel"
+                android:text="@string/peso" />
+
+            <EditText android:id="@+id/peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:hint="@string/kg"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
